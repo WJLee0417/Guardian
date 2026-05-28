@@ -4505,22 +4505,23 @@ body,
 
 .presentationStage .intelSceneGrouped .riskMeter {
   grid-template-columns: minmax(0, 1fr) auto !important;
-  align-items: start !important;
+  align-items: center !important;
   padding: 12px 22px !important;
 }
 
 .presentationStage .intelSceneGrouped .riskMeter strong {
-  align-self: start !important;
-  margin-top: -4px !important;
+  align-self: center !important;
+  margin-top: 0 !important;
   font-size: 3.85rem !important;
   line-height: 0.9 !important;
 }
 
 .presentationStage .intelSceneGrouped .riskMeter i {
   left: 22px !important;
-  right: 22px !important;
+  right: 140px !important;
   bottom: 14px !important;
   width: auto !important;
+  border-radius: 999px !important;
 }
 
 .presentationStage .mockRoutingScene {
