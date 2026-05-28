@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+# Guardian
+
 # Guardian Demo Prototype
 
 ## 1. 프로젝트 개요
@@ -79,6 +80,3 @@ npm run build
 6. AI 자체 보안 계층에서 Prompt Injection 탐지와 마스킹 확인
 7. JSON Preview에서 표준 이벤트, 스키마 검증, 해시 확인
 8. Mock 정보전 허브와 관리자 대시보드 갱신 확인
-=======
-# Guardian
->>>>>>> ca9259c5473b8f7318d966320927801365bc80db
