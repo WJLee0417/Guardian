@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { StatusBadge } from "./components/StatusBadge";
 import { demoScenario } from "./data/demoScenario";
 import type { ExtractedHow, IntelEvent, RiskResult, SafeguardResult, TranscriptLine } from "./types/guardian";
@@ -90,6 +90,14 @@ const routingStatusLabels: Record<string, string> = {
   REPORT_READY: "제보 초안 준비",
 };
 
+const STAGE_WIDTH = 1600;
+const STAGE_HEIGHT = 900;
+
+function getStageScale() {
+  if (typeof window === "undefined") return 1;
+  return Math.min(window.innerWidth / STAGE_WIDTH, window.innerHeight / STAGE_HEIGHT);
+}
+
 function routeLabel(target: string) {
   return routingTargetLabels[target] ?? target;
 }
@@ -138,6 +146,7 @@ function DataField({ label, value, delay = 0 }: { label: string; value: string; 
 }
 
 export function App() {
+  const [stageScale, setStageScale] = useState(getStageScale);
   const [sceneIndex, setSceneIndex] = useState(0);
   const [fileName, setFileName] = useState(demoScenario.input.fileName);
   const [fileStatus, setFileStatus] = useState("샘플 시나리오 입력 대기");
@@ -160,6 +169,16 @@ export function App() {
   const introCtaLabel = isSampleReady ? "AI 미끼봇 응대로 이동" : sampleStatus === "loading" ? "샘플 준비 중..." : "통화 샘플 불러오기";
 
   const rawInput = useMemo(() => getAllText(), []);
+
+  useEffect(() => {
+    function syncStageScale() {
+      setStageScale(getStageScale());
+    }
+
+    syncStageScale();
+    window.addEventListener("resize", syncStageScale);
+    return () => window.removeEventListener("resize", syncStageScale);
+  }, []);
 
   function computeExtraction() {
     const features = extractHow(getAllText(), demoScenario.incomingSms.body);
@@ -742,6 +761,11 @@ export function App() {
   }
 
   return (
+    <div className="presentationViewport">
+      <div
+        className="presentationStage"
+        style={{ "--stage-scale": stageScale } as CSSProperties}
+      >
     <div className="guardianApp sceneApp">
       <header className="topBar sceneTopBar">
         <div className="topTitle">
@@ -830,6 +854,8 @@ export function App() {
           </div>
         </div>
       )}
+    </div>
+      </div>
     </div>
   );
 }
