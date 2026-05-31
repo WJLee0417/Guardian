@@ -1,4 +1,4 @@
-import type { IntelEvent } from "../types/guardian";
+import type { IntelEvent } from "../types/aegis";
 import { StatusBadge } from "./StatusBadge";
 
 export function MockDashboard({ event }: { event: IntelEvent | null }) {

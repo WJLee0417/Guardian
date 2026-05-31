@@ -1,4 +1,4 @@
-import type { ExtractedHow, RiskResult } from "../types/guardian";
+import type { ExtractedHow, RiskResult } from "../types/aegis";
 
 export function calculateRiskScore(features: ExtractedHow): RiskResult {
   let score = 0;

@@ -1,4 +1,4 @@
-import type { ExtractedHow } from "../types/guardian";
+import type { ExtractedHow } from "../types/aegis";
 
 export const promptInjectionKeywords = [
   "기관 사칭",

@@ -1,10 +1,10 @@
-# Guardian
+# Aegis
 
-# Guardian Demo Prototype
+# Aegis Demo Prototype
 
 ## 1. 프로젝트 개요
 
-Guardian Demo Prototype은 보이스피싱 의심 통화를 실제 통화망 없이 샘플 시나리오로 재현하는 발표용 데모 앱입니다. AI 미끼봇이 사기범과 통화를 유지하고, STT/SMS 기반 정보 수집 엔진이 HOW 정보를 추출한 뒤, AI 자체 보안 계층과 표준 JSON 이벤트를 거쳐 Mock 정보전 허브와 관리자 대시보드로 전달되는 흐름을 보여줍니다.
+Aegis Demo Prototype은 보이스피싱 의심 통화를 실제 통화망 없이 샘플 시나리오로 재현하는 발표용 데모 앱입니다. AI 미끼봇이 사기범과 통화를 유지하고, STT/SMS 기반 정보 수집 엔진이 HOW 정보를 추출한 뒤, AI 자체 보안 계층과 표준 JSON 이벤트를 거쳐 Mock 정보전 허브와 관리자 대시보드로 전달되는 흐름을 보여줍니다.
 
 ## 2. 실행 방법
 

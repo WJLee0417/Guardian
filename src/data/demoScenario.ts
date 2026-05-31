@@ -1,4 +1,4 @@
-import type { DemoScenario } from "../types/guardian";
+import type { DemoScenario } from "../types/aegis";
 
 export const demoScenario: DemoScenario = {
   persona: {

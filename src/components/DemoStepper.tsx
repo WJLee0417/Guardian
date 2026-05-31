@@ -1,4 +1,4 @@
-import type { DemoState } from "../types/guardian";
+import type { DemoState } from "../types/aegis";
 
 export function DemoStepper({ states, currentState }: { states: readonly DemoState[]; currentState: DemoState }) {
   const currentIndex = states.indexOf(currentState);

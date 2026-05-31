@@ -52,7 +52,7 @@ mark {
   font-weight: 900;
 }
 
-.guardianApp {
+.aegisApp {
   height: 100vh;
   max-height: 100vh;
   padding: 18px;
@@ -1196,7 +1196,7 @@ mark {
     overflow: auto;
   }
 
-  .guardianApp,
+  .aegisApp,
   .sceneApp {
     height: auto;
     max-height: none;
@@ -1244,7 +1244,7 @@ mark {
 }
 
 @media (max-width: 767px) {
-  .guardianApp {
+  .aegisApp {
     padding: 10px;
   }
 
@@ -1296,7 +1296,7 @@ mark {
   }
 }
 
-/* Dfizae / Guardian presentation design pass */
+/* Dfizae / Aegis presentation design pass */
 :root {
   --ink: #141414;
   --charcoal: #333333;
@@ -1382,7 +1382,7 @@ textarea {
   outline-offset: 2px;
 }
 
-.guardianApp {
+.aegisApp {
   padding: clamp(10px, 1.3vw, 18px);
   background: var(--canvas);
 }
@@ -1628,7 +1628,7 @@ textarea {
 }
 
 .samplePanel::before {
-  content: "준비 전";
+  content: "?? ?";
   position: absolute;
   top: 24px;
   right: 28px;
@@ -1642,7 +1642,7 @@ textarea {
 }
 
 .samplePanel.sample-loading::before {
-  content: "로드 중";
+  content: "?? ?";
   color: var(--accent);
   background: var(--accent-soft);
 }
@@ -1652,7 +1652,7 @@ textarea {
 }
 
 .samplePanel.sample-ready::before {
-  content: "준비 완료";
+  content: "?? ??";
   color: white;
   background: var(--ink);
 }
@@ -2178,7 +2178,7 @@ mark {
 }
 
 @media (max-width: 767px) {
-  .guardianApp {
+  .aegisApp {
     padding: 10px;
   }
 
@@ -2271,7 +2271,7 @@ mark {
     place-items: center;
   }
 
-  .guardianApp.sceneApp {
+  .aegisApp.sceneApp {
     width: min(100vw, calc(100vh * 16 / 9));
     height: min(100vh, calc(100vw * 9 / 16));
     max-width: 1920px;
@@ -2299,7 +2299,7 @@ mark {
     --fs-label: 0.6875rem;
   }
 
-  .guardianApp {
+  .aegisApp {
     padding: 12px;
   }
 
@@ -2814,7 +2814,7 @@ mark {
 
 /* Rebuilt desktop stage allocation for the AI bait-bot scene. */
 @media (min-width: 1280px) {
-  .guardianApp.sceneApp {
+  .aegisApp.sceneApp {
     padding: 10px !important;
     grid-template-rows: clamp(94px, 10vh, 118px) clamp(42px, 5vh, 54px) minmax(0, 1fr) clamp(60px, 7vh, 74px) !important;
     gap: 8px !important;
@@ -4361,7 +4361,7 @@ mark {
   transform-origin: center;
 }
 
-.presentationStage .guardianApp.sceneApp {
+.presentationStage .aegisApp.sceneApp {
   width: 1600px !important;
   height: 900px !important;
   max-width: none !important;
@@ -4383,7 +4383,7 @@ body,
 
 /* Fit-critical overrides for the fixed 16:9 stage.
    These rules avoid scene-specific content being clipped after the whole app is scaled. */
-.presentationStage .guardianApp.sceneApp {
+.presentationStage .aegisApp.sceneApp {
   padding: 10px !important;
   grid-template-rows: 108px 40px minmax(0, 1fr) 64px !important;
   gap: 8px !important;

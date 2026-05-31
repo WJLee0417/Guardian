@@ -1,4 +1,4 @@
-import type { IntelEvent } from "../types/guardian";
+import type { IntelEvent } from "../types/aegis";
 
 export function resolveRoutingTargets(event: Pick<IntelEvent, "risk" | "extractedHow" | "safeguard">): string[] {
   const targets = new Set<string>();

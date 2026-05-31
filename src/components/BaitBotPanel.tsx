@@ -1,4 +1,4 @@
-import type { DemoScenario, DemoState } from "../types/guardian";
+import type { DemoScenario, DemoState } from "../types/aegis";
 import { StatusBadge } from "./StatusBadge";
 
 export function BaitBotPanel({ scenario, state }: { scenario: DemoScenario; state: DemoState }) {

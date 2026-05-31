@@ -1,4 +1,4 @@
-import type { IntelEvent } from "../types/guardian";
+import type { IntelEvent } from "../types/aegis";
 import { shortHash } from "../utils/hash";
 import { validateIntelEvent } from "../utils/schemaValidator";
 import { StatusBadge } from "./StatusBadge";

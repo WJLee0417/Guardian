@@ -1,4 +1,4 @@
-import type { SafeguardResult } from "../types/guardian";
+import type { SafeguardResult } from "../types/aegis";
 import { StatusBadge } from "./StatusBadge";
 
 export function AiSafeguardPanel({

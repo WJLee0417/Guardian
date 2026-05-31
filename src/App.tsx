@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { StatusBadge } from "./components/StatusBadge";
 import { demoScenario } from "./data/demoScenario";
-import type { ExtractedHow, IntelEvent, RiskResult, SafeguardResult, TranscriptLine } from "./types/guardian";
+import type { ExtractedHow, IntelEvent, RiskResult, SafeguardResult, TranscriptLine } from "./types/aegis";
 import { buildIntelEvent } from "./utils/buildIntelEvent";
 import { extractHow } from "./utils/extractors";
 import { shortHash } from "./utils/hash";
@@ -24,7 +24,7 @@ const scenes: Array<{ id: DemoScene; label: string; title: string; subtitle: str
   {
     id: "INTRO",
     label: "시작",
-    title: "Guardian 데모 시작",
+    title: "Aegis 데모 시작",
     subtitle: "통화 샘플 · 대응 흐름 시작",
     nextCopy: "샘플을 불러오면 AI가 먼저 전화를 받는 장면으로 넘어갑니다.",
   },
@@ -766,10 +766,10 @@ export function App() {
         className="presentationStage"
         style={{ "--stage-scale": stageScale } as CSSProperties}
       >
-    <div className="guardianApp sceneApp">
+    <div className="aegisApp sceneApp">
       <header className="topBar sceneTopBar">
         <div className="topTitle">
-          <p className="eyebrow">Guardian Demo Prototype</p>
+          <p className="eyebrow">Aegis Demo Prototype</p>
           <h1>{scene.title}</h1>
           <span>{scene.subtitle}</span>
         </div>

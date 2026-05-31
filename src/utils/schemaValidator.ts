@@ -1,4 +1,4 @@
-import type { IntelEvent } from "../types/guardian";
+import type { IntelEvent } from "../types/aegis";
 
 const requiredFields = [
   "schema",

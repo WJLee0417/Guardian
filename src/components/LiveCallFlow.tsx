@@ -1,5 +1,5 @@
 import { bottomFlow, liveFlowSteps } from "../data/demoScenario";
-import type { DemoScenario, DemoState } from "../types/guardian";
+import type { DemoScenario, DemoState } from "../types/aegis";
 import { FileDropZone } from "./FileDropZone";
 
 type StepStatus = "WAITING" | "RUNNING" | "DONE" | "MOCK";

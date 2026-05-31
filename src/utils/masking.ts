@@ -1,4 +1,4 @@
-import type { ExtractedHow, SafeguardResult } from "../types/guardian";
+import type { ExtractedHow, SafeguardResult } from "../types/aegis";
 
 export function maskSensitiveInfo(text: string): string {
   return text

@@ -1,4 +1,4 @@
-import type { DemoScenario, ExtractedHow, RiskResult } from "../types/guardian";
+import type { DemoScenario, ExtractedHow, RiskResult } from "../types/aegis";
 import { StatusBadge } from "./StatusBadge";
 
 export function IntelEnginePanel({

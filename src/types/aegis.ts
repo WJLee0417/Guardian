@@ -71,7 +71,7 @@ export interface IntelEvent {
   incidentId: string;
   callId: string;
   createdAt: string;
-  source: "Guardian Demo";
+  source: "Aegis Demo";
   extractedHow: Omit<ExtractedHow, "promptInjectionKeywords">;
   risk: RiskResult;
   safeguard: Omit<SafeguardResult, "maskedText" | "maskedKeywords">;

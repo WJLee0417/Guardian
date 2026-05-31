@@ -1,4 +1,4 @@
-import type { ExtractedHow, IntelEvent, RiskResult, SafeguardResult, TranscriptLine } from "../types/guardian";
+import type { ExtractedHow, IntelEvent, RiskResult, SafeguardResult, TranscriptLine } from "../types/aegis";
 import { generateHash } from "./hash";
 import { resolveRoutingTargets, simulateMockApiSend } from "./routing";
 
@@ -13,7 +13,7 @@ export async function buildIntelEvent(data: {
     incidentId: "INC-001",
     callId: "CALL-001",
     createdAt: new Date().toISOString(),
-    source: "Guardian Demo",
+    source: "Aegis Demo",
     extractedHow: {
       agency: data.extractedHow.agency,
       appName: data.extractedHow.appName,
