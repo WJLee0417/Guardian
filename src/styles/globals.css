@@ -1628,7 +1628,7 @@ textarea {
 }
 
 .samplePanel::before {
-  content: "?? ?";
+  content: "\C900\BE44\20\C804";
   position: absolute;
   top: 24px;
   right: 28px;
@@ -1642,7 +1642,7 @@ textarea {
 }
 
 .samplePanel.sample-loading::before {
-  content: "?? ?";
+  content: "\B85C\B4DC\20\C911";
   color: var(--accent);
   background: var(--accent-soft);
 }
@@ -1652,7 +1652,7 @@ textarea {
 }
 
 .samplePanel.sample-ready::before {
-  content: "?? ??";
+  content: "\C900\BE44\20\C644\B8CC";
   color: white;
   background: var(--ink);
 }
